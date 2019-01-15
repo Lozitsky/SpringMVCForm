@@ -1,0 +1,1 @@
+**_`The application sends and shows login and password that entered into the form`_**
