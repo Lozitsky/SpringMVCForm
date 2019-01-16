@@ -21,13 +21,15 @@
 <form:form method="post" modelAttribute="user" action="check-user" class="box login">
     <fieldset class="boxBody">
         <form:label path="name">Username:</form:label>
-        <form:input path="name" placeholder="your name"/>
+        <form:input path="name" placeholder="your name" required=""/>
 
         <form:label path="password">Password:</form:label>
-        <form:password path="password" placeholder="your password"/>
+        <form:password path="password" placeholder="your password" required=""/>
     </fieldset>
     <footer>
-        <label><input type="checkbox" tabindex="3">Keep me logged in</label>
+        <form:checkbox path="admin"/>
+        <form:label path="admin">Admin</form:label>
+
         <input type="submit" class="btnLogin" value="Login" tabindex="4">
     </footer>
 </form:form>
